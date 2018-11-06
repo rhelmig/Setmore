@@ -2,6 +2,7 @@
 Documentation  Sample proof of concept for a Meeting Scheduler application
 Resource    ../Resources/Common.robot
 Resource    ../Resources/SchedulerApp.robot
+# robot -d results tests/scheduler_smoke.robot
 
 Suite Setup  Begin Test
 Suite Teardown  End Test

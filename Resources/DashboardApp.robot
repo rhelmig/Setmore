@@ -34,30 +34,25 @@ Create Meeting
     click link                          //*[@id="editApptPopup"]/div[3]/ul/li[2]/div[1]/a
 
 Select Client
-#    sleep  2s
+    sleep  2s
 	Wait Until Page Contains Element   	xpath=.//input[contains(@class, "appt-customer-input")]
     Click Element                   	xpath=.//li[contains(@class, "tab-customer")]
 	Input Text                      	xpath=.//input[contains(@class, "appt-customer-input")]   	Test Test
     Wait Until Page Contains        	Test Test
-#    Sleep  2s
+    Sleep  2s
 	${element}  get webelement          class:appt-suggestion-dropdown-title
 	click element  ${element}
     Wait Until Element Is Visible   	xpath=.//a[contains(normalize-space(@class), "appt-save-btn")]
-#    sleep  1s
+    sleep  1s
     click link                          Save Appointment
     page should contain                 Test Review $ 50
-    Log                                 Meeting Schduled
+    Log                                 Meeting Scehduled
 
 Delete Meeting
     Click Element   	                xpath=.//div[contains(@class, "fc-event-bg")]
-#	sleep  2s
-	Wait Until Element Is Visible   	xpath=.//h2[contains(normalize-space(.), 'Appointment Details')]
-    select window                       xpath=.//h2[contains(normalize-space(.), 'Appointment Details')]
-    click element                       ///span[@innertext='Edit Appointment ']
-    wait until element is visible       .appt-delete-btn
-    click link                          Delete
-    wait until element is visible       //span[#'delete-confirmation-btn']
-    select window                       //div[#'delete-confirmation-popup']
-    Click Element   	                //span[#'delete-confirmation-btn']
+	Wait Until Element Is Visible   	xpath=.//div[contains(normalize-space(@class), "appointmentView shadow")]
+	Click Element   	                xpath=.//span[contains(@class, "deleteAppt")]
+	Wait Until Element Is Visible   	xpath=(.//h3[contains(@class, "popover-title")])[last()]
+	Click Element   	                delete-confirmation-btn
     log                                 Dashboard Smoke success!
 

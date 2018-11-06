@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-#Library    WaitCheck.py
+
 
 *** Variables ***
 ${meeting_date}      //td[@class='datepickerSelected']//a[@href='#']
