@@ -42,7 +42,7 @@ Select Client
     Sleep  2s
 	${element}  get webelement          class:appt-suggestion-dropdown-title
 	click element  ${element}
-    wait until element is enabled   	xpath=.//a[contains(normalize-space(@class), "appt-save-btn")]
+    Wait Until Page Contains   	        CUSTOMER
     sleep  1s
     click link                          Save Appointment
     page should contain                 Test Review $ 50
