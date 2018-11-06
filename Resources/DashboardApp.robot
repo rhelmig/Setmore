@@ -42,7 +42,7 @@ Select Client
     Sleep  2s
 	${element}  get webelement          class:appt-suggestion-dropdown-title
 	click element  ${element}
-    Wait Until Page Contains   	        CUSTOMER
+    wait until page contains element    css:.tab-customer
     sleep  1s
     click link                          Save Appointment
     page should contain                 Test Review $ 50
