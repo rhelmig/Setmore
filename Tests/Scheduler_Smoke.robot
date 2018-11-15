@@ -8,8 +8,8 @@ Suite Setup  Begin Test
 Suite Teardown  End Test
 
 *** Variables ***
-${Url} =  https://qatest.setmore.com/  #Global change for environment
-${browser} =  Chrome
+${Url}      https://qatest.setmore.com/  #Global change for environment
+${browser}  Chrome
 
 *** Test Cases ***
 

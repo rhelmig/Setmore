@@ -4,6 +4,7 @@ Documentation   	A quick smoke test for the Scheduler Admin.
 ...                 then delete the meeting.
 Library   	        SeleniumLibrary   15.0   5.0
 Resource            Resources/DashboardApp.robot
+
 # robot -d results tests/dashboard.robot
 
 *** Test Cases ***

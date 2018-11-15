@@ -5,7 +5,6 @@ Resource  ./PO/Service.robot
 Resource  ./PO/Date.robot
 Resource  ./PO/UserInfo.robot
 Resource  ./PO/Confirm.robot
-
 *** Keywords ***
 
 Open Scheduler

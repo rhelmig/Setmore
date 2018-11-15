@@ -1,7 +1,7 @@
 *** Variables ***
 ${Browser}   	Chrome
 ${email}   	    rickhelmig@hotmail.com
-${password}   	fisher1214
+${password}   	asdf1234
 
 *** Keywords ***
 
