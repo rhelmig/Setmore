@@ -3,7 +3,7 @@ Documentation   	A quick smoke test for the Scheduler Admin.
 ...                 Goal is to log the user in on the Dashboard, create a meeting, confirm details,
 ...                 then delete the meeting.
 Library   	        SeleniumLibrary   15.0   5.0
-Resource            Resources/DashboardApp.robot
+Resource            ../Resources/DashboardApp.robot
 
 # robot -d results tests/dashboard.robot
 

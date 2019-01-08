@@ -55,4 +55,6 @@ Delete Meeting
 	Wait Until Element Is Visible   	xpath=(.//h3[contains(@class, "popover-title")])[last()]
 	Click Element   	                delete-confirmation-btn
     log                                 Dashboard Smoke success!
+    close browser
+
 

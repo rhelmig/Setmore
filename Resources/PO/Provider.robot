@@ -2,7 +2,8 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${Link}  xpath=(.//div[contains(@class, "bg_holder")])[6]
+#${Link}  xpath=(.//div[contains(@class, "bg_holder")])[6]
+${Link}  xpath=//div[@id='sp_act']/ul/li[1]/div[@class='bg_holder']
 
 *** Keywords ***
 click
